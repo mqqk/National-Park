@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>National Parks</h1>
+    <form id="js-main-form">
+        <label for="search-states">Provide your State's abbreviated name to see more!</label><br>
+        <input type="text" name="stateName" id="js-stateName" placeholder="North Carolina=NC" required><br>
+        <label for="maxResults">How many results would you like?</label><br>
+        <input type="text" name="maxResults" id="js-maxResults" value='10'><br>
+        <input type="submit" value="Submit">
+    </form>
+    <div id="js-results"></div>
+    
+
+<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+<script src="index.js"></script>
+</body>
+</html>
