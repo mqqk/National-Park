@@ -1,3 +1,4 @@
+'use strict'
 const apiKey='f4C6B746YK1H2t7yxNw11yxeUN4hob7gQ2EwjOh6';
 
 const searchUrl = 'https://developer.nps.gov/api/v1/parks?api_key=';
@@ -18,6 +19,7 @@ function displayInfo(responseJson){
           
         </div>
     `)}
+    $('#js-results').removeClass('hidden');
 }
 
 function formatQueryParams(params) {
@@ -76,4 +78,4 @@ function readyFunction(){
         getResponse(state,maxResults);
     })
 }
-$(readyFunction);
+$(readyFunction);  
